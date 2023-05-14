@@ -1,0 +1,72 @@
+:root {
+  --eggshell: #f4f1deff;
+  --burnt-sienna: #e07a5fff;
+  --delft-blue: #3d405bff;
+  --cambridge-blue: #81b29aff;
+  --sunset: #f2cc8fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  box-sizing: border-box;
+  background-color: var(--cambridge-blue);
+}
+
+.imageSlider {
+  background-color: var(--cambridge-blue);
+  border-radius: 12px;
+  margin: 50px;
+  /* box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2); */
+}
+button {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: medium;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2);
+  color: #218380ff;
+  border: none;
+  background-color: #f4f1deff;
+}
+#root {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+img {
+  width: 200px;
+  height: auto;
+}
+h1 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #218380ff;
+  padding-top: 20px;
+}
+p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #218380ff;
+}
+/* CSS HEX
+--xanthous: #ffbc42ff;
+--raspberry: #d81159ff;
+--quinacridone-magenta: #8f2d56ff;
+--teal: #218380ff;
+--non-photo-blue: #73d2deff; */
