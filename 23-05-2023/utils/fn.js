@@ -1,6 +1,6 @@
 import { credentials } from "./credentials.js";
 import { GET } from "./http.js";
-const bodyEl = document.querySelector("body");
+export const bodyEl = document.querySelector("body");
 export const createEl = (type, content, ...attr) => {
   const element = document.createElement(type);
   element.textContent = content;
@@ -8,7 +8,11 @@ export const createEl = (type, content, ...attr) => {
   return element;
 };
 export const productCard = (productData) => {
-  const wrapperEl = ("div", "", { name: "class", value: "cartList" });
+  const wrapperEl = createEl("div", "", {
+    name: "class",
+    value: "cartList",
+  });
+  console.log(wrapperEl);
   const titleEl = createEl("h5", productData.title, {
     name: "class",
     value: "titleEl",
@@ -45,7 +49,7 @@ export const logInPage = () => {
     if (isAuth) {
       alert("bravo fra!");
       console.log(isAuth.id);
-      GET(`/carts/${isAuth.id}`).then((data) =>
+      GET(isAuth.id).then((data) =>
         data.products.forEach((product) => {
           bodyEl.append(productCard(product));
         })

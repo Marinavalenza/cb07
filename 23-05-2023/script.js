@@ -1,10 +1,11 @@
-import { createEl, logInPage } from "./utils/fn.js";
-import { credentials } from "./utils/credentials.js";
+import { createEl, logInPage, bodyEl } from "./utils/fn.js";
+
+//import { credentials } from "./utils/credentials.js";
 //console.log(credentials);
-const bodyEl = document.querySelector("body");
+//
 //console.log(bodyEl);
 const wrapperEl = createEl("div", "", { name: "class", value: "cartItems" });
-wrapperEl.append(logInPage());
+bodyEl.append(logInPage());
 bodyEl.appendChild(wrapperEl);
 
 //HTTP METHODS (serve a gestire la richiesta, la risposta riguarda il back end)
