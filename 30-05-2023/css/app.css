@@ -1,0 +1,19 @@
+@import "/css/reset.css";
+@import "/css/variables.css";
+@import "/css/layout.css";
+@import "/css/header.css";
+
+@import url("https://fonts.googleapis.com/css2?family=Dosis&display=swap");
+
+main {
+  display: flex;
+  flex-direction: row;
+  font-family: "Dosis", sans-serif;
+  font-size: 16px;
+  background-color: var(--color--light);
+  color: var(--color--brand);
+}
+body {
+  background-color: var(--color--light);
+  margin-bottom: 200px;
+}
